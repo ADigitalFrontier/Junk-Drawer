@@ -1,13 +1,24 @@
+"""
+    Used to extract text from XCF (GIMP) files
+"""
+
+
 import re
 
 
 delims = [
-    [["""<markup><b><span size=\\\"12288\\\">""", """<"""],
-    ["""<markup><b><span size=\\\"12288\\\"><span foreground=\\\"#000000\\\">""", """<"""]],
+    [
+        ["""<markup><b><span size=\\\"12288\\\">""", """<"""],
+        ["""<markup><b><span size=\\\"12288\\\"><span foreground=\\\"#000000\\\">""", """<"""]
+    ],
 
-    [["<markup><b><span size=\\\"8847\\\">", """<"""]],
+    [
+        ["<markup><b><span size=\\\"8847\\\">", """<"""]
+    ],
 
-    [["""<markup><b><span size=\\\"8847\\\">""", """<"""]]
+    [
+        ["""<markup><b><span size=\\\"8847\\\">""", """<"""]
+    ]
 ]
 
 
